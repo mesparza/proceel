@@ -185,6 +185,7 @@ section {
 }
 
 .logo a {
+    font-family: cursive;
     color: #1ABC9C;
 }
 
@@ -459,6 +460,14 @@ a.menu-link:before {
 -----------------------------------------*/
 .align-center {
     text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
 }
 
 /* Separator
@@ -1235,7 +1244,69 @@ html[xmlns] .slides {
      cursor: default;
 }
 
-/* MEDIA QUERIES    
+/* CHROME FRAME PROMPT
+----------------------------------------------------------------------------------------------------*/
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Proceel custom style
+----------------------------------------------------------------------------------------------------*/
+
+.subtitle-color{
+    color: #1F9BC9;
+}
+
+/* Productos */
+
+.navaja-icon{
+    background-image: url(../img/navaja-icon.png);
+    background-size: 100%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.cerca-electrica-icon{
+    background-image: url(../img/cerca-electrica-icon.jpg);
+    background-size: 100%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.malla-ciclon-icon{
+    background-image: url(../img/malla-ciclon-icon.jpg);
+    background-size: 100%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+/* Alambre Navaja*/
+
+#alambre-navaja .cbp-so-side-right{
+    padding-top: 0px;
+}
+
+/* Cercas Electricas */
+
+#cercas-electricas p{
+    font-size: 0.8em;
+}
+
+/* Malla Ciclon */
+
+#malla-ciclon img{
+    margin-top: 0px;
+    width: 100%;
+}
+
+/* MEDIA QUERIES
 ----------------------------------------------------------------------------------------------------*/
 @media (min-width: 37.5em) { /* 600px/16px */
 
@@ -1259,17 +1330,26 @@ html[xmlns] .slides {
         float: right;
         margin: 0;
     }
+
 }
 
 @media (min-width: 45em) { /* 720px/16px */
-    
+
+    #alambre-navaja .cbp-so-side-right{
+        padding-top: 10%;
+    }
+
+    #malla-ciclon img{
+        margin-top: 15%;
+    }
+
     [class*="col_"] {
         float:left;
         margin: 0 0 0 2%;
     }
-    
-    [class*="col_"]:first-child  { margin-left: 0; } 
-    
+
+    [class*="col_"]:first-child  { margin-left: 0; }
+
     .col_1 { width: 6.5%; }
     .col_2 { width: 15.0%; }
     .col_3 { width: 23.5%; }
@@ -1292,7 +1372,7 @@ html[xmlns] .slides {
     }
 
     a.menu-link {
-       display: none;
+        display: none;
     }
 
     .main-nav {
@@ -1302,7 +1382,7 @@ html[xmlns] .slides {
         clear: none;
         line-height: 100px;
     }
-    
+
     .main-nav li {
         display: inline-block;
         margin-left: 25px;
@@ -1316,13 +1396,13 @@ html[xmlns] .slides {
     .main-nav a {
         padding: 0;
     }
-    
+
     .top-header,
     section {
         padding: 80px 0;
         text-align: left;
     }
-     
+
 }
 
 @media (min-width: 67.5em) { /* 1080px/16px */
@@ -1341,14 +1421,4 @@ html[xmlns] .slides {
         max-width: 1100px;
     }
 
-}
-
-/* CHROME FRAME PROMPT
-----------------------------------------------------------------------------------------------------*/
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
 }
