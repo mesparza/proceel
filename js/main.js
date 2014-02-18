@@ -25,8 +25,7 @@ jQuery(document).ready(function($){
 	  });
 
 	// CBP Scroller
-	new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
-    new cbpScroller( document.getElementById( 'cbp-so-scroller-alambre' ) );
+    new cbpScroller( document.getElementById( 'cbp-so-scroller-alambre-navaja' ) );
     new cbpScroller( document.getElementById( 'cbp-so-scroller-cercas-electricas' ) );
     new cbpScroller( document.getElementById( 'cbp-so-scroller-malla-ciclon' ) );
 
