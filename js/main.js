@@ -1,5 +1,12 @@
 jQuery(document).ready(function($){
 
+    var url = window.location.href;
+    if (url.indexOf("about") != -1){
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top - 100
+        }, 1000);
+    }
+
 	// Menu Toggle
 	var $menu = $('#menu'),
 	$menulink = $('.menu-link');

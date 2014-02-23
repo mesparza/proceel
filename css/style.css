@@ -378,12 +378,12 @@ a.menu-link:before {
 -----------------------------------------*/
 .subscribe {
     border: none;
-    color: #fff;
-    background: #1ABC9C;
+    /*color: #fff;
+    background: #1ABC9C;*/
 }
 
 .subscribe h2 {
-    color: #fff;
+    //color: #fff;
 }
 
 .subscribe-wrap {
@@ -413,6 +413,7 @@ a.menu-link:before {
     line-height: 1;
     outline: none;
     border-radius: 0 4px 4px 0;
+    color: #FFF;
 }
 
 
@@ -495,7 +496,7 @@ select,
 textarea {
     display: block;
     margin: 0;
-    border: none;
+    border: solid 1px #000;
     outline: none;
     color: inherit;
     background: #fff;
@@ -1295,6 +1296,22 @@ html[xmlns] .slides {
 #malla-ciclon img{
     margin-top: 0px;
     width: 100%;
+}
+
+/* Contacto */
+
+.contacto-wrap input{
+    width:50%
+}
+
+.contacto-wrap button{
+   border-radius: 4px;
+   position: relative;
+}
+
+.contacto-wrap textarea{
+    border-radius: 4px;
+    width: 80%;
 }
 
 /* MEDIA QUERIES
