@@ -7,5 +7,14 @@
  */
 jQuery(document).ready(function($){
 
+    var parameter = 'send';
+    var url = window.location.href;
+    if(url.indexOf('?' + parameter + '=') != -1)
+        $('.send-message').show();
+    else{
+        $('.send-message').hide();
+    }
+
+
 
 });

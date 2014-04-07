@@ -54,23 +54,23 @@
     <section>
         <section id="contacto" class="subscribe">
             <div class="container">
+                <p class="send-message">El email se envio satisfactoriamente. En breve nos pondremos en contacto con usted.</p>
                 <div id="cbp-so-scroller-contacto" class="cbp-so-scroller">
-
                     <div class="cbp-so-section">
                         <div class="col_6 cbp-so-side cbp-so-side-left">
                             <h2>Contactenos</h2>
-                            <form action="#" />
-                            <div class="contacto-wrap">
-                                <input type="text" placeholder="Correo Electronico" required="" />
-                                <br>
-                                <input type="text" placeholder="Nombre" required="" />
-                                <br>
-                                <input type="text" placeholder="Telefono"/>
-                                <br>
-                                <textarea required=""></textarea>
-                                <br>
-                                <button>Enviar</button>
-                            </div>
+                            <form action="send_email.php" method="post" name="contactForm" id="contactForm">
+                                <div class="contacto-wrap">
+                                    <input name="email" type="text" placeholder="Correo Electronico" required="" />
+                                    <br>
+                                    <input name="name" type="text" placeholder="Nombre" required="" />
+                                    <br>
+                                    <input name="phone" type="text" placeholder="Telefono"/>
+                                    <br>
+                                    <textarea name="comment" required=""></textarea>
+                                    <br>
+                                    <button>Enviar</button>
+                                </div>
                             </form>
                         </div>
                         <div class="col_6 cbp-so-side cbp-so-side-right align-left">

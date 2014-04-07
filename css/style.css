@@ -331,10 +331,10 @@ a.menu-link:before {
 }
 
 .flexslider .slides .slide-testimonials img {
-    width: 100px;
-    height: 100px;
+    /*width: 100px;*/
+    height: 200px;
     margin: 0 auto 20px;
-    border-radius: 100%;
+    /*border-radius: 100%;*/
 }
 
 .slide-testimonials .quote,
@@ -383,7 +383,7 @@ a.menu-link:before {
 }
 
 .subscribe h2 {
-    //color: #fff;
+    color: #fff;
 }
 
 .subscribe-wrap {
@@ -1299,6 +1299,10 @@ html[xmlns] .slides {
 }
 
 /* Contacto */
+
+.send-message{
+    display: none;
+}
 
 .contacto-wrap input{
     width:50%

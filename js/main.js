@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
 
 	// CBP Scroller
     new cbpScroller( document.getElementById( 'cbp-so-scroller-alambre-navaja' ) );
-    new cbpScroller( document.getElementById( 'cbp-so-scroller-cercas-electricas' ) );
+    //new cbpScroller( document.getElementById( 'cbp-so-scroller-cercas-electricas' ) );
     new cbpScroller( document.getElementById( 'cbp-so-scroller-malla-ciclon' ) );
 
 	// OWL Carousel
@@ -90,6 +90,7 @@ jQuery(document).ready(function($){
 	// Flexslider
 	$('.flexslider').flexslider({
 		animation: 'slide',
+        slideshowSpeed: 4000,
 		animationSpeed: 800,
 		directionNav: true,
 		controlNav: false,
